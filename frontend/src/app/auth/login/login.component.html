@@ -1,0 +1,130 @@
+<div class="login-body">
+  <div class="login-left">
+    <div class="slider-container">
+      <div class="slider">
+        <div class="card" *ngFor="let card of cards; let i = index" [class.active]="i === currentCard">
+          <div>
+            <img [src]="card.image" alt="Card image">
+          </div>
+          <div>
+            <p>{{ card.text }}</p>
+          </div>
+          
+        </div>
+      </div>
+      <button mat-button class="nav left" (click)="prevCard()">&#10094;</button>
+      <button mat-button class="nav right" (click)="nextCard()">&#10095;</button>
+    </div>
+    
+    <!-- <img
+    *ngIf="activeForm === 'login'"
+      src="https://cdn-icons-png.freepik.com/512/3463/3463555.png"
+      alt=""
+      srcset=""
+    />
+
+    <img
+    *ngIf="activeForm === 'register'"
+    src="https://cdn-icons-png.freepik.com/512/2881/2881071.png"
+    alt=""
+    srcset=""
+  /> -->
+   <!-- <div class="left-heading">
+    <h1>The Best Quality Electric Wires For Your House</h1>
+    <p>Experience the best in cables, sockets, and electrical wires. At <span>Cable-Shoppe</span> we provide reliable and high-quality solutions to meet all your electrical needs. Trust us to deliver exceptional performance and safety in every product.</p>
+   </div> -->
+  
+  </div>
+
+  
+  <div
+    *ngIf="activeForm === 'login'"
+    class="login-right"
+  >
+    <div class="login-container">
+      <h3>Login</h3>
+      <p>Welcome to Cable-Shoppe</p>
+      <form class="form-login" [formGroup]="loginForm" (ngSubmit)="login()">
+        <div class="form-group">
+          <input type="email" formControlName="email" placeholder="Email" />
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            formControlName="password"
+            placeholder="Password"
+          />
+        </div>
+        <button type="submit">Login</button>
+        <p  (click)="toggleForm('register')">
+          Don't have an account?
+          <span class="highlighted">Register</span>
+        </p>
+      </form>
+
+      <div class="or">
+        <hr class="line" />
+        <p>Or</p>
+        <hr class="line" />
+      </div>
+      <button
+       
+        class="google-btn"
+      >
+      <i class="fa-brands fa-google"></i>
+        Login with Google
+      </button>
+    </div>
+  </div>
+
+  <!--Register -->
+
+  <div  *ngIf="activeForm === 'register'" class="signup-right">
+    <div class="signup-container">
+        <h3>Signup</h3>
+     <p>Welcome to Cable-Shoppe</p>
+     <form   class="form-signup"  [formGroup]="registerForm"  (ngSubmit)="register()">
+        <div class="form-group">
+          <input type="email" formControlName="email" placeholder="Email" />
+        </div>
+        <div class="form-group">
+          <input type="number" formControlName="mobileNumber" placeholder="Mobile No." />
+        </div>
+        <div class="form-group">
+          <input type="password" formControlName="password" placeholder="Password" />
+        </div>
+
+        <div class="form-group">
+            <input type="password" formControlName="confirmPassword" placeholder="Confirm Password" />
+          </div>
+        <button type="submit" >Signup</button>
+        <p  (click)="toggleForm('login')">Already have an account?
+        <span class="highlighted">Login</span> 
+        </p>
+      </form>
+      <div class="or">
+        <hr class="line" />
+        <p>Or</p>
+        <hr class="line" />
+      </div>
+
+      <button
+       
+      class="google-btn"
+    >
+      <!-- <FcGoogle /> -->
+      <i class="fa-brands fa-google"></i>
+      Signup with Google
+    </button>
+    </div>
+
+    
+    </div>
+
+<!--    
+    <button (click)="notifySuccess()">Show Success</button>
+    <button (click)="notifyInfo()">Show Info</button>
+    <button (click)="notifyWarn()">Show Warn</button>
+    <button (click)="notifyError()">Show Error</button> -->
+
+</div>

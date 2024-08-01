@@ -1,0 +1,27 @@
+<div class=" products-container">
+  <div *ngFor="let category of products" class="products">
+
+    <div class="category">
+      <img [src]="category.image" alt="{{ category.category }} Image">
+      <p>{{ category.category }}</p>
+    </div>
+    
+    
+      
+      <div *ngFor="let product of category.products" class="product">
+        <div class="inner-product-div">
+          <img [src]="product.image" alt="{{ product.name }} Image">
+          <p>{{ product.name }}</p>
+          <div class="cost">
+            <p>${{product.cost}}</p>
+            <span>Qty: <input type="number" [(ngModel)]="product.quantity" [value]="1" min="1"></span> 
+            <button (click)=addToCart(product) >Add to Cart</button>
+          </div>
+        </div>
+        
+      </div>
+    
+  </div>
+</div>
+
+  

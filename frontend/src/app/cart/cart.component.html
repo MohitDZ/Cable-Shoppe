@@ -1,0 +1,49 @@
+<div *ngIf="cartOpen$ | async" class="overlay">
+  <div class="cart-container">
+    <div *ngIf="products?.length === 0; else cartItems">
+   
+      <div class="empty-cart">
+        <div class="close-button" (click)="closeCart()">✖</div>
+
+        <h5>Cart Items is empty!</h5>
+      </div>
+    </div>
+    <ng-template #cartItems>
+      <div class="open-cart">
+        <div class="close-button" (click)="closeCart()">✖</div>
+        <div class="cart-header">
+          <i class="bag-icon"></i>
+          <h5>Cable basket</h5>
+        </div>
+        <div class="cart-items">
+          <div *ngFor="let item of products; let i = index" class="cart-item">
+            <div class="remove-button" (click)="removeItem(item)">✖</div>
+            <img
+              [src]="item?.image"
+              alt="Product Image"
+              class="product-image"
+            />
+            <div class="item-details">
+              <div>
+                <h2>{{ item.name }}</h2>
+                <h4> <span>${{ item.cost }} </span>x {{item.quantity}}</h4>
+                
+              </div>
+              <div class="quantity-controls">
+                <div (click)="incrementQuantity(item)" class="increment">+</div>
+
+                <div (click)="decrementQuantity(item)" class="decrement">-</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </ng-template>
+    <div *ngIf="products?.length !== 0" class="checkout">
+      <a routerLink="/checkout" class="checkout-button">
+        Checkout Now ${{grandTotal}}
+      </a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    width: 100%;
+}
+
+#products{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    // margin-top: 100px;
+    // margin-bottom: 1000px;
+
+    h1{
+        font-size: 2.3rem;
+    }
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+}
+
+.toast{
+ 
+    z-index: 100000000;
+}

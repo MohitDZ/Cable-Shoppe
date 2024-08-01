@@ -1,0 +1,88 @@
+<header>
+  <a class="logo" routerLink="/"
+    ><div class="logo-div">
+      <img src="../../../../assets/images/favicon.png" alt="" srcset="" />
+      Cable-Shoppe
+    </div></a
+  >
+
+  <nav class="header-nav">
+    <div class="categories">
+      <div>
+        <a href="#products">Categories</a>
+      </div>
+
+      <div class="categories-container">
+        <div class="arrow"></div>
+        <div *ngFor="let category of products" class="cat-cont">
+          <div class="product">
+            <img [src]="category.image" alt="{{ category.category }} Image" />
+            <p class="categories-title">
+              {{ category.category }}
+            </p>
+          </div>
+
+          <div
+            *ngFor="let product of category.products"
+            class="product pro-cont"
+          >
+            <img [src]="product.image" alt="{{ product.name }} Image" />
+            <p>{{ product.name }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="products-nav">
+      <div>
+        <a href="#products" (click)="scrollToSection($event, 'products')"
+          >Products</a
+        >
+      </div>
+      <div class="products-nav-container">
+        <div class="arrow"></div>
+        <span>Wires</span>
+        <span>Cables</span>
+        <span>Switches</span>
+      </div>
+    </div>
+
+    <div class="market-nav">
+      <div>
+        <a routerLink="/market">Market</a>
+      </div>
+      <div class="market-nav-container">
+        <div class="arrow"></div>
+        <span>Global Market</span><span> Indian Market </span>
+      </div>
+    </div>
+
+    <div class="cart-nav">
+      <div>
+        <a (click)=openCart() >Cart</a>
+      </div>
+      <span>{{totalItem}}</span>
+      <div *ngIf="totalItem === 0" class="cart-nav-container">
+        <div class="arrow"></div>
+        Cart is Empty!
+      </div>
+    </div>
+
+    <div class="logo-signup">
+      <a
+        href="#login-section"
+        (click)="scrollToSection($event, 'login-section')"
+        (click)="toggleForm('login')"
+        class="header-login"
+        >Login</a
+      >
+      <a
+        href="#login-section"
+        (click)="scrollToSection($event, 'login-section')"
+        (click)="toggleForm('register')"
+        class="header-signup"
+        >Signup</a
+      >
+    </div>
+  </nav>
+</header>

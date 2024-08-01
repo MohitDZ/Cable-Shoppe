@@ -1,0 +1,39 @@
+[
+  {
+    "category": "Aluminum Cables",
+    "image": "https://5.imimg.com/data5/NA/JI/GLADMIN-2/aluminum-cables-125x125.png",
+    "products": [
+      { "id": 1, "name": "Aluminium Armoured Cable", "image": "https://5.imimg.com/data5/GLADMIN/Default/2022/6/WV/KZ/WP/87924/aluminium-armoured-cable-125x125.jpg", "cost": 100 },
+      { "id": 2, "name": "Single Core Aluminium Cable", "image": "https://3.imimg.com/data3/RC/LO/GLADMIN-155039/single-core-aluminium-cable-125x125.jpg", "cost": 75 },
+      { "id": 3, "name": "Round Aluminium Cable", "image": "https://5.imimg.com/data5/PK/OP/GLADMIN-2/round-aluminium-cable-125x125.png", "cost": 90 },
+      { "id": 4, "name": "PVC Insulated Aluminum Cable", "image": "https://4.imimg.com/data4/MV/SL/GLADMIN-179239/pvc-insulated-aluminum-cable-125x125.jpg", "cost": 85 },
+      { "id": 5, "name": "Insulated Aluminium Wire", "image": "https://4.imimg.com/data4/AP/TL/GLADMIN-2/insulated-aluminium-wire-125x125.jpg", "cost": 70 },
+      { "id": 6, "name": "Aluminium Welding Cable", "image": "https://5.imimg.com/data5/BF/LQ/DN/GLADMIN-65832/aluminium-welding-cable-125x125.jpg", "cost": 110 },
+      { "id": 7, "name": "AAC Cable", "image": "https://3.imimg.com/data3/PW/DO/GLADMIN-53095/aac-cable-125x125.jpg", "cost": 95 }
+    ]
+  },
+  {
+    "category": "Armoured Cable",
+    "image": "https://5.imimg.com/data5/GLADMIN/Default/2022/6/MP/VR/KI/87924/armoured-cables-125x125.jpg",
+    "products": [
+      { "id": 8, "name": "Aluminium Armoured Cable", "image": "https://5.imimg.com/data5/GLADMIN/Default/2022/6/WV/KZ/WP/87924/aluminium-armoured-cable-125x125.jpg", "cost": 100 },
+      { "id": 9, "name": "Copper Armoured Cable", "image": "https://5.imimg.com/data5/GLADMIN/Default/2022/6/SN/UA/SU/87924/copper-armoured-cables-125x125.jpg", "cost": 125 },
+      { "id": 10, "name": "3 Core Armoured Cable", "image": "https://5.imimg.com/data5/GLADMIN/Default/2022/6/OR/HH/GT/87924/3-core-armoured-cable-125x125.jpg", "cost": 130 },
+      { "id": 11, "name": "Underground Armoured Cable", "image": "https://5.imimg.com/data5/GLADMIN/Default/2022/6/MB/NW/QI/87924/underground-armoured-cable-125x125.jpg", "cost": 140 },
+      { "id": 12, "name": "PVC Insulated Armoured Cable", "image": "https://5.imimg.com/data5/GLADMIN/Default/2022/6/KH/OE/IX/87924/pvc-insulated-armoured-cable-125x125.jpg", "cost": 120 }
+    ]
+  },
+  {
+    "category": "Industrial Wires",
+    "image": "https://5.imimg.com/data5/UR/HF/GLADMIN-2/industrial-wires-125x125.png",
+    "products": [
+      { "id": 13, "name": "PVC Cables", "image": "https://3.imimg.com/data3/SH/NW/GLADMIN-8862/pvc-cables-125x125.jpg", "cost": 50 },
+      { "id": 14, "name": "Solar Cables", "image": "https://5.imimg.com/data5/XX/XX/GLADMIN-/solar-cable-125x125.jpg", "cost": 65 },
+      { "id": 15, "name": "Fibreglass Cables", "image": "https://5.imimg.com/data5/XS/SB/GLADMIN-2/fibreglass-cables-125x125.png", "cost": 80 },
+      { "id": 16, "name": "Silicone Wire", "image": "https://3.imimg.com/data3/KM/KR/GLADMIN-37785/silicone-wire-125x125.jpg", "cost": 70 },
+      { "id": 17, "name": "Flat Elevator Cable", "image": "https://5.imimg.com/data5/UF/UK/GLADMIN-2/flat-elevator-cable-125x125.png", "cost": 85 },
+      { "id": 18, "name": "Earthing Wire", "image": "https://5.imimg.com/data5/HT/HG/GLADMIN-2/1-125x125.jpg", "cost": 55 },
+      { "id": 19, "name": "Hook-up Wire", "image": "https://5.imimg.com/data5/UE/IM/GLADMIN-2/hook-up-wire-125x125.png", "cost": 45 }
+    ]
+  }
+]

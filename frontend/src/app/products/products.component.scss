@@ -1,0 +1,109 @@
+.products-container {
+  margin: 70px 0;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-size: smaller;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding-bottom: 100px;
+}
+
+.products {
+  border: 1px solid rgb(222, 222, 222);
+  border-radius: 7px;
+  // overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 89%;
+  gap: 27px;
+}
+
+.category {
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // width: 100%;
+  // gap: 100px;
+ 
+  // padding: 0 10px;
+  border-radius: 4px;
+  text-align: center;
+  background-color: white;
+  transition: transform 0.3s ease-in-out;
+}
+.inner-product-div{
+  max-width: 100px;
+
+  position:block;
+  padding: 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.inner-product-div:hover {
+  
+ max-width: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.381);
+  z-index: 1000;
+  transform: scale(1.1);
+  padding: 10px 20px;
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  flex-direction: column;
+  font-size: .8rem;
+  width: 180px;
+  .cost{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    input{
+      width: 50px;
+    }
+    p{
+      margin: 0;
+      color: rgb(184, 69, 69);
+      font-size: 1.2rem;
+    }
+
+    button{
+      background-color: black;
+      color: white;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+  }
+
+}
+.products img {
+  width: 100px;
+  height: 100px;
+  display: block;
+}
+.cost{
+ display: none;
+}
